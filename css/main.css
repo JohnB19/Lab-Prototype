@@ -1,0 +1,70 @@
+body {
+  background-color: #097731;
+}
+
+.setting {
+  height: 30px;
+  width: 30px;
+  background-color: #BCC1BD;
+  margin-left: 21em;
+}
+
+.setting2 {
+  height: 30px;
+  width: 30px;
+  background-color: #BCC1BD;
+  margin-left: 18.5em;
+  position:absolute;
+  top: 5em;
+
+}
+
+
+.profpic {
+  height: 100px;
+  width: 100px;
+  background-color: #BCC1BD;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.sidemenu {
+  background-color: #BCC1BD;
+  height: 55px;
+  width: 55px;
+  top: 120px;
+
+}
+
+#li {
+  display: inline-block;
+}
+
+.Task1 {
+  height: 100px;
+  width: 150px;
+  background-color:#BCC1BD;
+  position: absolute;
+  top: 265px;
+  right: 105px;
+  border: 1px solid black;
+
+}
+
+.Task2 {
+  height: 100px;
+  width: 140px;
+  background-color:#A0A3A0;
+  position: absolute;
+  top: 355px;
+  right: 110px;
+}
+
+.Task3 {
+  height: 100px;
+  width: 130px;
+  background-color:#838783;
+  position: absolute;
+  top: 430px;
+  right: 115px;
+}
