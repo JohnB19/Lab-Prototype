@@ -2,23 +2,23 @@ body {
   background-color: #097731;
 }
 
-.setting {
-  height: 30px;
-  width: 30px;
-  background-color: #BCC1BD;
-  margin-left: 21em;
+
+.wrapper1 > div {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 1em;
+  color: rgb(0, 0, 0);
+}.wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.setting2 {
-  height: 30px;
-  width: 30px;
-  background-color: #BCC1BD;
-  margin-left: 18.5em;
-  position:absolute;
-  top: 5em;
-
+.montask {
+font-size: 1.5em;
 }
-
 
 .profpic {
   height: 100px;
@@ -28,43 +28,46 @@ body {
   margin: 0 auto;
 }
 
-.sidemenu {
-  background-color: #BCC1BD;
-  height: 55px;
-  width: 55px;
-  top: 120px;
-
+.sidemenu1 {
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 
-#li {
-  display: inline-block;
+.sidemenu2 {
+  grid-column: 1/1;
+  grid-row: 2/3;
 }
+
+.sidemenu3 {
+  grid-column: 1/1;
+  grid-row: 3/4;
+}
+
+.sidemenu4 {
+grid-column: 1/1;
+grid-row: 4/4;
+}
+
 
 .Task1 {
-  height: 100px;
-  width: 150px;
-  background-color:#BCC1BD;
-  position: absolute;
-  top: 265px;
-  right: 105px;
-  border: 1px solid black;
+grid-column: 3/5;
+grid-row: 2/1;
 
 }
 
 .Task2 {
-  height: 100px;
-  width: 140px;
-  background-color:#A0A3A0;
-  position: absolute;
-  top: 355px;
-  right: 110px;
+grid-column: 3/5;
+grid-row: 3/2;
+
 }
 
 .Task3 {
-  height: 100px;
-  width: 130px;
-  background-color:#838783;
-  position: absolute;
-  top: 430px;
-  right: 115px;
+  grid-column: 3/5;
+  grid-row: 4/3;
+
+}
+
+.tsk {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
 }
