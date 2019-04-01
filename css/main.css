@@ -1,6 +1,28 @@
 body {
   background-color: #097731;
+  min-height: 100vh;
+  padding: rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.appcontainer {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-width: 650px;
+  min-width: 500px;
+  background: #f1f5f8;
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
 
 
 .wrapper1 > div {
@@ -28,7 +50,7 @@ font-size: 1.5em;
   margin: 0 auto;
 }
 
-.sidemenu1 {
+/* .sidemenu1 {
   grid-column: 1/1;
   grid-row: 1/1;
 }
@@ -46,28 +68,81 @@ font-size: 1.5em;
 .sidemenu4 {
 grid-column: 1/1;
 grid-row: 4/4;
-}
+} */
 
 
 .Task1 {
 grid-column: 3/5;
 grid-row: 2/1;
-
+width: 280px;
 }
+
+.montask {
+  border-radius: 25px;
+  background-color: #006400;
+  color: white;
+  width: 250px 350px;
+  }
+
+.tuetask {
+  border-radius: 25px;
+  background-color: #000080;
+  color: white;
+}
+
+
+
 
 .Task2 {
 grid-column: 3/5;
 grid-row: 3/2;
+width: 280px;
 
 }
 
 .Task3 {
   grid-column: 3/5;
   grid-row: 4/3;
+  width: 280px;
 
 }
+
+.Task4 {
+  grid-column: 3/5;
+  grid-row: 5/4;
+  width: 280px;
+
+}
+
+.Task5 {
+  grid-column: 3/5;
+  grid-row: 6/5;
+  width: 280px;
+}
+
+.Task6 {
+  grid-column: 3/5;
+  grid-row: 6/6;
+  width: 280px;
+}
+
+.Task7 {
+  grid-column: 3/5;
+  grid-row 7/6;
+  width: 280px;
+}
+
+
+
+
 
 .tsk {
   display: grid;
   grid-template-columns: 2fr 4fr 1fr;
+}
+
+
+
+li.tsk.completed {
+  text-decoration: line-through;
 }
