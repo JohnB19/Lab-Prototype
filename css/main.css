@@ -38,9 +38,9 @@ body {
   grid-auto-rows: minmax(100px, auto);
 }
 
-.montask {
+/* .montask {
 font-size: 1.5em;
-}
+} */
 
 .profpic {
   height: 100px;
@@ -81,7 +81,6 @@ width: 280px;
   border-radius: 25px;
   background-color: #006400;
   color: white;
-  width: 250px 350px;
   }
 
 .tuetask {
