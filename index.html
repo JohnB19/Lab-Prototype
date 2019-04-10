@@ -1,108 +1,162 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+    <link rel="stylesheet" href="./index.css">
+</head>
 
-  <section class="appcontainer">
-  <body>
-    <div class="Appname">
-    <h1> EzLife</h1>
-  </div>
+<body>
+    <section class="appcontainer">
 
-<div class="profpic"></div>
+        <div class="Appname">
+            <h1> EzLife</h1>
+        </div>
 
-<div class="wrapper1">
-<!-- <div class="sidemenu1">Sideicon1</div>
+        <div class="profpic"></div>
+
+        <div class="wrapper1">
+            <!-- <div class="sidemenu1">Sideicon1</div>
 <div class="sidemenu2">Sideicon2</div>
 <div class="sidemenu3">Sideicon3</div>
 <div class="sidemenu4">Sideicon4</div> -->
-<div class="addTaskContainer">
-    <p>Add task</p>
-    <div>
-        <label>Day</label>
-        <select class="week">
-          <option value="Monday">Monday</option>
-          <option value="Tuesday">Tuesday</option>
-          <option value="Wednesday">Wednesday</option>
-          <option value="Thursday">Thursday</option>
-          <option value="Friday">Friday</option>
-          <option value="Saturday">Saturday</option>
-          <option value="Sunday">Sunday</option>
-        </select>
-    </div>
-    <div>
-        <label>Time</label>
-        <input type="text" class="inputTaskTime">
-    </div>
-    <div>
-        <label>Text</label>
-        <input type="text" class="inputTaskName">
-    </div>
-  <button class="addTask">Add</button>
-</div>
+            <div class="addTaskContainer day">
+                <p>Add task</p>
+                <div>
+                    <label>Day</label>
+                    <select class="week" id="weeks">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Time</label>
+                    <input type="text" class="inputTaskTime">
+                </div>
+                <div>
+                    <label>Text</label>
+                    <input type="text" class="inputTaskName">
+                </div>
+                <button class="addTask">Add</button>
+            </div>
+            <section class="weekDays">
+            <div class="Task1 monday day">
+                <h1 class="montask">Monday</h1>
+                <ul id="cTask" class="Monday">
+                </ul>
+            </div>
 
-<div class="Task1 monday"><h1 class="montask">Monday</h1>
-<ul id="cTask" class="Daytask1">
-</ul> </div>
+            <div class="Task2 tuesday day">
+                <h1 class="tuetask">Tuesday</h1>
+                <ul id="cTask1" class="Tuesday">
+                    <!--  <li class="tsk"><div class="time">4:00 Pm</div> <div class="task">Gym Day</div></li>
+  <li class="tsk"><div class="time">5:30 Pm</div> <div class="task">Car Maintenance</div></li> -->
 
-<div class="Task2 tuesday"><h1 class="tuetask">Tuesday</h1>
- <ul id="cTask1" class="Daytask2">
- <li class="tsk"><div class="time">4:00 Pm</div> <div class="task">Gym Day</div></li>
-  <li class="tsk"><div class="time">5:30 Pm</div> <div class="task">Car Maintenance</div></li>
-
-</ul> </div>
-
-
-<div class="Task3 wednesday"><h1 class="wedtask">Wednesday</h1>
-  <ul id="cTask" class="Daytask3">
-    <li class="tsk"><div class="time">8:00 Am</div> <div class="task">Company Meeting</div></li>
-    <li class="tsk"><div class="time">10:00 Am</div> <div class="task">Doctor's Appointment</div></li>
-    <li class="tsk"><div class="time">7:00 Pm</div> <div class="task">Family Reunion</div></li>
-
-  </ul></div>
-
-<div class="Task4 thursday"><h1 class="thurtask">Thursday</h1>
-  <ul id="cTask" class="Daytask4">
-    <li class="tsk"><div class="time">1:00 Pm</div> <div class="task">Grandma's Birthday</div></li>
-    <li class="tsk"><div class="time">7:00 Pm</div> <div class="task">Walk the dog</div></li>
-    <li class="tsk"><div class="time">9:00 Pm</div> <div class="task">Dinner with boss</div></li>
-
-  </ul></div>
+                </ul>
+            </div>
 
 
-  <div class="Task5 friday"><h1 class="fritask">Friday</h1>
-    <ul id="cTask" class="Daytask5">
-    <li class="tsk"><div class="time">11:00 Pm</div> <div class="task">Projects due today</div></li>
-    <li class="tsk"><div class="time">3:00 Pm</div> <div class="task">Pick up kids from
-  school</div></li>
-   </ul></div>
+            <div class="Task3 wednesday day">
+                <h1 class="wedtask">Wednesday</h1>
+                <ul id="cTask" class="Wednesday">
+                    <li class="tsk">
+                        <div class="time">8:00 Am</div>
+                        <div class="task">Company Meeting</div>
+                    </li>
+                    <li class="tsk">
+                        <div class="time">10:00 Am</div>
+                        <div class="task">Doctor's Appointment</div>
+                    </li>
+                    <li class="tsk">
+                        <div class="time">7:00 Pm</div>
+                        <div class="task">Family Reunion</div>
+                    </li>
 
-  <div class="Task6 saturday"><h1 class="sattask">Saturday</h1>
-    <ul id="cTask" class="Daytask6">
-    <li class="tsk"><div class="time">11:00 Pm</div> <div class="task">Projects due today</div></li>
-    <li class="tsk"><div class="time">3:00 Pm</div> <div class="task">Pick up kids from
-  school</div></li>
-   </ul></div>
+                </ul>
+            </div>
+
+            <div class="Task4 thursday day">
+                <h1 class="thurtask">Thursday</h1>
+                <ul id="cTask" class="Thursday">
+                    <li class="tsk">
+                        <div class="time">1:00 Pm</div>
+                        <div class="task">Grandma's Birthday</div>
+                    </li>
+                    <li class="tsk">
+                        <div class="time">7:00 Pm</div>
+                        <div class="task">Walk the dog</div>
+                    </li>
+                    <li class="tsk">
+                        <div class="time">9:00 Pm</div>
+                        <div class="task">Dinner with boss</div>
+                    </li>
+
+                </ul>
+            </div>
 
 
-  <div class="Task7 sunday"><h1 class="suntask">Sunday</h1>
-    <ul id="cTask" class="Daytask7">
-    <li class="tsk"><div class="time">4:00 Pm</div> <div class="task">Church with Family</div></li>
-    <li class="tsk"><div class="time">6:00 Pm</div> <div class="task">Groceries
-  school</div></li>
-   </ul></div>
+            <div class="Task5 friday day">
+                <h1 class="fritask">Friday</h1>
+                <ul id="cTask" class="Friday">
+                    <li class="tsk">
+                        <div class="time">11:00 Pm</div>
+                        <div class="task">Projects due today</div>
+                    </li>
+                    <li class="tsk">
+                        <div class="time">3:00 Pm</div>
+                        <div class="task">Pick up kids from
+                            school</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Task6 saturday day">
+                <h1 class="sattask">Saturday</h1>
+                <ul id="cTask" class="Saturday">
+                    <li class="tsk">
+                        <div class="time">4:00 Pm</div>
+                        <div class="task">Play ball</div>
+                    </li>
+                    <li class="tsk">
+                        <div class="time">7:30 Pm</div>
+                        <div class="task">Dinner with wife</div>
+                    </li>
+                </ul>
+            </div>
 
 
-  </section>
+            <div class="Task7 sunday day">
+                <h1 class="suntask">Sunday</h1>
+                <ul id="cTask" class="Sunday">
+                    <li class="tsk">
+                        <div class="time">4:00 Pm</div>
+                        <div class="task">Church with Family</div>
+                    </li>
+                    <li class="tsk">
+                        <div class="time">6:00 Pm</div>
+                        <div class="task">Groceries
+                            school</div>
+                    </li>
+                </ul>
+            </div>
+            </section>
+        </div>
+
+
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <script src="./index.js"></script>
+</body>
+
 </html>
