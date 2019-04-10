@@ -11,7 +11,7 @@ body {
 
   .appcontainer {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     min-height: 500px;
     max-width: 650px;
     min-width: 500px;
@@ -91,16 +91,50 @@ body {
   }
 
   .montask {
-    border-radius: 25px;
+    border-radius: 1px;
     background-color: #006400;
     color: white;
     }
 
   .tuetask {
-    border-radius: 25px;
+    border-radius: 1px;
     background-color: #000080;
     color: white;
   }
+
+  .wedtask {
+    border-radius: 1px;
+    background-color: #741906;
+    color: white;
+  }
+
+  .thurtask {
+    border-radius: 1px;
+    background-color: #0492AD;
+    color: white;
+  }
+
+  .fritask {
+    border-radius: 1px;
+    background-color: #A5027B;
+    color: white;
+
+  }
+
+  .sattask {
+    border-radius: 1px;
+    background-color: #45044E;
+    color: white;
+  }
+
+  .suntask {
+    border-radius: : 1px;
+    background-color: #215BDB;
+    color: white;
+  }
+
+
+
 
 
   .Task2 {
